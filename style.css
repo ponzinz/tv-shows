@@ -1,0 +1,91 @@
+:root {
+    --appleBlue: #3481d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    height: 100vh;
+    padding: 6rem 2rem;
+    background: var(--background);
+}
+
+.container {
+    padding: 10px;
+}
+
+.add {
+    width: 50px;
+    height: 40px;
+    position: relative;
+    background-color: var(--appleBlue);
+    border-radius: 5px;
+    border: 1px solid darkgray;
+}
+
+.add a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    padding: 10px 2px;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgrey;
+}
+
+.title a {
+    font-size: 18px;
+    float: right;
+    color: var(--appleBlue);
+    text-decoration: none;
+}
+
+.tv-series {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.show-box {
+    box-shadow: rgba(65, 65, 65, 0.5) 0, 15px, 30px 0;
+    width: calc(100% / 6 - 20px);
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(101, 101, 101, 0.2) 5px 10px;
+
+}
+
+.show-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.episodes {
+    color: rgb(60, 60, 60);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+span {
+    font-weight: bolder;
+}
