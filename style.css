@@ -62,20 +62,19 @@ body {
 
 .show-box {
     box-shadow: rgba(65, 65, 65, 0.5) 0, 15px, 30px 0;
-    width: calc(100% / 6 - 20px);
-    margin: 10px;
+    width: calc(100% / 6 - 40px);
+    margin: 20px;
 }
 
 img {
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(101, 101, 101, 0.2) 5px 10px;
-
 }
 
 .show-title {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 50px;
+    font-size: 100%;
     font-weight: bolder;
     text-align: center;
 }
@@ -83,9 +82,46 @@ img {
 .episodes {
     color: rgb(60, 60, 60);
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px 25px;
+    font-size: 90%;
 }
 
 span {
     font-weight: bolder;
+}
+
+/* --------ANIMATION------------ */
+
+.tv-series .show-box img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.tv-series .show-box:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+    box-shadow: 0;
+}
+
+.tv-series .show-box .show-title {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.tv-series .show-box:hover .show-title {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.tv-series .show-box .episodes {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.tv-series .show-box:hover .episodes {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
